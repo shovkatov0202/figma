@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+  background: #0082e6;
+  width: 100%;
+  height: 80px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.fury {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.wolf {
+  padding: 40px 100px;
+}
+
+
+.wolf img{
+  width: 100%;
+}
+
+.roma{
+  padding: 40px 100px;
+}
+
+.roma img {
+  width: 100%;
+}
+
+.fendi {
+  text-align: center;
+}
+
+
+.bobo {
+  padding: 40px 100px;
+}
+
+.bobo img {
+  width: 100%;
+}
+
+.opa {
+  margin-left: 300px;
+}
+
+.som{
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.shadow__btn {
+  background: red;
+}
+
+
+.som{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+
+footer{ 
+  width: 100%; 
+  height: max-content; 
+  padding: 70px; 
+  background-color: #f8f8f8; 
+  display: grid; 
+  grid-template-columns: repeat(4,1fr ); 
+}
+
+
+@media all and (max-width: 486px){
+  .som{
+flex-direction: column-reverse;
+  }
+}
+
+@media all and (max-width: 1216px){
+  footer{ 
+    width: 100%; 
+    height: max-content; 
+    padding: 50px; 
+    background-color: #f8f8f8; 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr ); 
+  }
+}
+
+@media all and (max-width: 958px){
+  footer{ 
+    width: 100%; 
+    height: max-content; 
+    padding: 40px; 
+    background-color: #f8f8f8; 
+    display: grid; 
+    grid-template-columns: repeat(2,1fr ); 
+  }
+}
+
+@media all and (max-width: 600px){
+  footer{ 
+    width: 100%; 
+    height: max-content; 
+    padding: 25px; 
+    background-color: #f8f8f8; 
+    display: grid; 
+    grid-template-columns: repeat(1,1fr );
+    text-align: center; 
+  }
+}
+
+
+
+
+/* header {
+    background: url("https://www.realmadrid.com/img/cc_1280px/marcelo-levanta-copa-ok_20230508101013.jpg")
+      no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+  } */
+
+@media all and (max-width: 958px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 858px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.9s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover .active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    right: 0;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  padding: 40px 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.ong img,
+.left img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+button {
+  background: red;
+}
+
+
+.parents {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card img {
+  width: 70px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+}
+
+section {
+  height: max-content;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.left {
+  width: 100%;
+
+}
+
+
+.icon {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.airpods{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 796px) {
+  header {
+    height: max-content;
+    flex-direction: column-reverse;
+    padding: 50px 100px;
+  }
+
+  .chap {
+    text-align: center;
+  }
+
+  section {
+    height: max-content;
+    flex-direction: column;
+    padding: 50px 100px;
+  }
+
+  .right {
+    text-align: center;
+  }
+}
